@@ -1,0 +1,17 @@
+server {
+
+    location / {
+
+        proxy_pass http://localhost:5000;
+
+    }
+
+    location /public/ {
+
+        root /var/www/app/;
+
+        autoindex off;
+
+    }
+
+}
